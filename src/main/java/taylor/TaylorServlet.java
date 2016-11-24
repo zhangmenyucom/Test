@@ -13,7 +13,7 @@ public class TaylorServlet extends HttpServlet {
 	
 	public void service(HttpServletRequest request,HttpServletResponse response) throws ServletException, IOException{
 		String name=request.getParameter("name");
-		request.setAttribute("result", "收到name为"+name);
+		request.setAttribute("result", "收到name为"+name+"");
 		request.getRequestDispatcher("/index.jsp").forward(request,response);
 	}
 
